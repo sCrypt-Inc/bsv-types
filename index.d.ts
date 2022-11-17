@@ -510,7 +510,7 @@ declare module 'bsv' {
         readonly compressed: boolean;
         readonly network: Networks.Network;
 
-        toAddress(network: Networks.Type): Address;
+        toAddress(network?: Networks.Type): Address;
         toPublicKey(): PublicKey;
         toString(): string;
         toObject(): object;
