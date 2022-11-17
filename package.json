@@ -14,7 +14,7 @@
     "types": "index.d.ts",
     "scripts": {},
     "dependencies": {
-        "@types/bn.js": "*"
+
     },
     "typeScriptVersion": "3.4",
     "devDependencies": {
