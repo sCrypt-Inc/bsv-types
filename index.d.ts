@@ -470,10 +470,10 @@ declare module 'bsv' {
         _getUnspentValue(): number;
         _estimateFee(): number;
         _estimateSize: number;
-        setInputScript(inputIndex: number, unlockingScript: Script | ((tx: Transaction, output: Transaction.Output) => Script)): Transaction;
-        setInputSequence(inputIndex: number, sequence: number): Transaction;
-        setOutput(outputIndex: number, output: Transaction.Output | ((tx: Transaction) => Transaction.Output));
-        seal(): void;
+        setInputScript(inputIndex: number, unlockingScript: Script | ((tx: Transaction, output: Transaction.Output) => Script)): this;
+        setInputSequence(inputIndex: number, sequence: number): this;
+        setOutput(outputIndex: number, output: Transaction.Output | ((tx: Transaction) => Transaction.Output)): this;
+        seal(): this;
         isSealed(): boolean;
         getChangeAmount(): number;
         getEstimateFee(): number;
